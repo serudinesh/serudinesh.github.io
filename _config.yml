@@ -27,9 +27,14 @@ about_content: | # this will include new lines to allow paragraphs
   A Team player as well as standalone tester with 15 plus years of broad experience in software testing(E2E) and design with Knowledge of Test Methodology of waterfall model, Agile, Scrum for product development with a working experience in core banking, Deposits, Payments Industry domain. Good knowledge supported with seven certifications in TOSCA Automation tool and have hands on experience on AS 400, Jira, and HP ALM. Able to mingle with technical and functional test teams spread across multiple geographical locations. Also, having worked in various projects related to Core Banking, Payments and Credit Cards for global clients like HSBC Technology, GE Money and Lloyds TS Banking business. Gained good expertise in understanding the overall business ecosystem. So, with these experiences, I am willing to grow in your organization which will definitely triggers Win-Win situations with constant and progressive learnings.
 
   I am most skilled in: <mark>TOSCA</mark> and <mark>Functional Testing</mark>
-
 Projects Section: |
 projects_title: Projects
+more_content: | # this will include new lines to allow paragraphs
+  Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+   - Rock climbing
+   - Gaming
+   - Knitting
+   - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
 # Experience Section
 # experience_title: Experience
