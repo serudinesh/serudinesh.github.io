@@ -29,18 +29,12 @@ about_content: | # this will include new lines to allow paragraphs
   I am most skilled in: <mark>TOSCA</mark> and <mark>Functional Testing</mark>
 Projects Section: |
 projects_title: Projects
-more_content: | # this will include new lines to allow paragraphs
-  Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-   - Rock climbing
-   - Gaming
-   - Knitting
-   - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
-# Experience Section
-# experience_title: Experience
+Experience Section
+experience_title: Experience
 
-# Education Section
-# educaton_title: Education
+Education Section
+educaton_title: Education
 
 # More Section
 # more_title: A Little More About Me
