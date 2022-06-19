@@ -1,0 +1,60 @@
+# Site
+repository: sproogen/resume-theme
+# favicon: images/favicon.ico
+
+# Personal info
+name: Dinesh Kumar Seru
+title: Senior Automation Test Engineer
+email: dineshkseru@gmail.com
+website: https://serudinesh.github.io/
+phone: +1 813 575 0245
+
+# Social links
+#twitter_username: facespics
+github_username: serudinesh
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+#instagram_username: chillwildlife
+linkedin_username: dinesh-kumar-seru-20884416
+# pinterest_username: jekyll
+#youtube_username: globalmtb
+# googleplus_username: +jekyll
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  A Team player as well as standalone tester with 15 plus years of broad experience in software testing(E2E) and design with Knowledge of Test Methodology of waterfall model, Agile, Scrum for product development with a working experience in core banking, Deposits, Payments Industry domain. Good knowledge supported with seven certifications in TOSCA Automation tool and have hands on experience on AS 400, Jira, and HP ALM. Able to mingle with technical and functional test teams spread across multiple geographical locations. Also, having worked in various projects related to Core Banking, Payments and Credit Cards for global clients like HSBC Technology, GE Money and Lloyds TS Banking business. Gained good expertise in understanding the overall business ecosystem. So, with these experiences, I am willing to grow in your organization which will definitely triggers Win-Win situations with constant and progressive learnings. Test
+
+  I am most skilled in: <mark>TOSCA</mark> and <mark>Functional Testing</mark>
+Projects Section: |
+projects_title: Projects
+
+Experience Section
+experience_title: Experience
+
+Education Section
+educaton_title: Education
+
+# More Section
+# more_title: A Little More About Me
+more_content: | # this will include new lines to allow paragraphs
+  Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+   - Rock climbing
+   - Gaming
+   - Knitting
+   - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+
+# Footer
+footer_show_references: true
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
