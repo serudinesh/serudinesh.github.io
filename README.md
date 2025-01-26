@@ -1,8 +1,8 @@
-                                                                                          **Dinesh Kumar Seru**
-                                                                              DevOps tooling | Automation Engineer | Test Architect
-                                                                                      linkedin.com/in/dinesh-kumar-seru-20884416
-
-E-mail: dineshkseru@gmail.com					Mobile: +1 813-575-0245
+**Dinesh Kumar Seru**
+DevOps tooling | Automation Engineer | Test Architect
+linkedin.com/in/dinesh-kumar-seru-20884416E-
+mail: dineshkseru@gmail.com					
+Mobile: +1 813-575-0245
 
 Professional Summary
 A highly skilled software testing professional with over 15 years of experience in end-to-end software testing and test design. Extensive expertise in the waterfall model, Agile, and Scrum methodologies across various industries, including core banking, payments, and deposits. Hands-on experience with tools like TOSCA, Jira, HP ALM, and AS/400. Adept at collaborating with cross-functional and geographically dispersed teams. Strong business domain knowledge in core banking and financial services with exposure to global clients like HSBC, GE Money, and Lloyds. Driven to contribute to organizational growth while continually enhancing technical knowledge.
@@ -59,3 +59,5 @@ Technical Projects
 •	LEAP (HSBC North America): Automated customer onboarding processes, leveraging TOSCA for API and end-to-end payment flow testing.
 •	Morel (HSBC North America): Led the testing for data migration during a divestiture program, using TOSCA for regression and validation.
 •	Greenfield (HSBC North America): Coordinated testing efforts for core banking systems replacement, using TOSCA for automation and defect management.
+
+
