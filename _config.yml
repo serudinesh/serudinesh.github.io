@@ -64,15 +64,40 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
+        title: WB Solutions LLC
+        link: https://www.wbsolutions.com/
         # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
+        sub_title: Data Engineer
+        caption: May 2022 - Present
         quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+          #Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
         description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+            •	Led the testing efforts for AAIS, a client-server application supporting new PCRs, with automation using TOSCA.
+            •	Integrated Jenkins for DevOps and CI/CD pipelines with TOSCA, enhancing test execution efficiency.
+            •	Managed end-to-end testing lifecycle using Jira for user stories, defect tracking, and traceability.
+      - layout: left
+        title: HSBC Software Development India Pvt. Ltd., Hyderabad
+        link: https://www.hsbc.co.in/
+        # link_text: boringcompany.com
+        sub_title: Senior Consultant Specialist
+        caption: Oct 2009 - May 2022
+        quote: >
+          #Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+            •	Spearheaded testing for core banking applications and worked extensively with the payments domain.
+            •	Implemented and managed TOSCA test automation frameworks for core banking projects, including “Greenfield” and “US Facility Misalignment.”
+            •	Led large teams in automation and manual testing for high-impact projects, ensuring smooth execution of global migrations and product launches.
+              - layout: left
+        title: Expleo, Chennai
+        link: https://expleo.com/global/en/
+        # link_text: boringcompany.com
+        sub_title: Software Engineer
+        caption: Jan 2007 - Sep 2009
+        quote: >
+          #Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+•	Contributed to software testing for major banking clients, including First Data and Lloyds Banking Group, focusing on end-to-end scenarios and functional testing.
+•	Utilized Vision Plus and AS/400 for test management and quality control.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
