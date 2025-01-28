@@ -100,7 +100,7 @@
     <script>
         function generateUETR() {
             const timestamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');  // Get timestamp in YYYYMMDD format
-            const uuid = crypto.randomUUID();  // Generate a random UUID
+            const uuid = crypto.randomUUID();  // Generate a random UUIDv4
             const uuidParts = uuid.split('-');  // Split UUID into parts
             const uetr = `${timestamp}-${uuidParts[0]}-${uuidParts[1]}-${uuidParts[2]}-${uuidParts[4]}`; // Combine parts to match the format
             return uetr;
