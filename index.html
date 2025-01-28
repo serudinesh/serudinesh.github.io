@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
         /* Centering content in the middle of the page */
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -58,6 +59,27 @@
             color: green;
             margin-top: 20px;
         }
+
+        /* Add style for navigation link */
+        .navigation-link {
+            font-size: 1.2rem;
+            display: block;
+            color: #4CAF50;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .navigation-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Styling for fixed footer link at bottom right corner */
+        footer {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -68,6 +90,11 @@
         <p id="uetr-output"></p>
         <p id="notification"></p> <!-- This will show the temporary message -->
     </div>
+
+    <!-- Add the footer with the navigation link positioned at the bottom right corner -->
+    <footer>
+        <a href="Dinesh_resume.html" class="navigation-link">Dinesh Profile</a>
+    </footer>
 
     <script>
         function generateUETR() {
