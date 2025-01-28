@@ -99,9 +99,10 @@
 
     <script>
         function generateUETR() {
-            const timestamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');
-            const randomPart = () => Math.random().toString(36).substr(2, 4).toUpperCase();
-            const uetr = `${timestamp}-${randomPart()}-${randomPart()}-${randomPart()}-${randomPart()}${randomPart()}`;
+            const timestamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');  // Get timestamp in YYYYMMDD format
+            const uuid = crypto.randomUUID();  // Generate a random UUID
+            const uuidParts = uuid.split('-');  // Split UUID into parts
+            const uetr = `${timestamp}-${uuidParts[0]}-${uuidParts[1]}-${uuidParts[2]}-${uuidParts[4]}`; // Combine parts to match the format
             return uetr;
         }
 
