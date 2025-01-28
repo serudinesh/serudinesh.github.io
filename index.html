@@ -1,11 +1,11 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UETR Generator</title>
     <style>
-        /* Centering content in the middle of the page */
+        /* Center the content */
         body {
             display: flex;
             flex-direction: column;
@@ -14,31 +14,38 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f7f7f7;
         }
 
         .container {
             text-align: center;
-            padding: 20px;
+            padding: 40px;
             background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
         }
 
         h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
         }
 
         button {
             font-size: 1.2rem;
-            padding: 10px 20px;
-            margin: 10px;
+            padding: 15px 25px;
             cursor: pointer;
             border: none;
             border-radius: 5px;
             background-color: #4CAF50;
             color: white;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
         }
 
         button:disabled {
@@ -47,91 +54,62 @@
         }
 
         p {
-            font-size: 2rem;
+            font-size: 1.5rem;
             margin-top: 20px;
             word-wrap: break-word;
+            color: #333;
         }
 
-        /* Style for the temporary "UETR copied" message */
+        /* Notification style for when UETR is copied */
         #notification {
             display: none;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: green;
             margin-top: 20px;
-        }
-
-        /* Add style for navigation link */
-        .navigation-link {
-            font-size: 1.2rem;
-            display: block;
-            color: #6c757d; /* Muted gray color */
-            text-decoration: none;
-            margin-top: 20px;
-        }
-
-        .navigation-link:hover {
-            text-decoration: underline;
-            color: #5a6268; /* Slightly darker gray on hover */
-        }
-
-        /* Styling for fixed footer link at bottom right corner */
-        footer {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            text-align: center;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
         <h1>UETR Generator</h1>
         <button id="generate-btn">Generate UETR</button>
         <button id="copy-btn" disabled>Copy UETR</button>
         <p id="uetr-output"></p>
-        <p id="notification"></p> <!-- This will show the temporary message -->
+        <p id="notification">UETR copied to clipboard!</p>
     </div>
 
-    <!-- Add the footer with the navigation link positioned at the bottom right corner -->
-    <footer>
-        <a href="Dinesh.html" class="navigation-link">Dinesh</a>
-    </footer>
-
     <script>
+        // Function to generate a UETR (UUID v4)
         function generateUETR() {
-            const timestamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');  // Get timestamp in YYYYMMDD format
-            const uuid = crypto.randomUUID();  // Generate a random UUIDv4
-            const uuidParts = uuid.split('-');  // Split UUID into parts
-            const uetr = `${timestamp}-${uuidParts[0]}-${uuidParts[1]}-${uuidParts[2]}-${uuidParts[4]}`; // Combine parts to match the format
-            return uetr;
+            return crypto.randomUUID();  // Generate a random UUID
         }
 
-        // Generate UETR and display it
+        // Event listener for generating UETR
         document.getElementById("generate-btn").addEventListener("click", () => {
             const uetr = generateUETR();
             document.getElementById("uetr-output").textContent = uetr;
             document.getElementById("copy-btn").disabled = false; // Enable the copy button
         });
 
-        // Copy UETR to clipboard
+        // Event listener for copying UETR to clipboard
         document.getElementById("copy-btn").addEventListener("click", () => {
             const uetr = document.getElementById("uetr-output").textContent;
             navigator.clipboard.writeText(uetr)
                 .then(() => {
-                    // Show the "UETR copied" message
                     const notification = document.getElementById("notification");
-                    notification.textContent = "UETR copied to clipboard!";
-                    notification.style.display = "block"; // Make it visible
-                    
-                    // Hide the message after 1 second
+                    notification.style.display = "block"; // Show the "UETR copied" message
+
+                    // Hide the message after 1.5 seconds
                     setTimeout(() => {
                         notification.style.display = "none";
-                    }, 1000);
+                    }, 1500);
                 })
                 .catch(() => {
                     alert("Failed to copy UETR. Please try again.");
                 });
         });
     </script>
+
 </body>
 </html>
