@@ -1,204 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dinesh Kumar Seru - Resume</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      font-size: 1.8rem;
-      margin-top: 1.5rem;
-      margin-bottom: 0.5rem;
-      border-bottom: 2px solid #2c3e50;
-      padding-bottom: 0.3rem;
-    }
-    h3 {
-      font-size: 1.4rem;
-      margin-top: 1.2rem;
-      margin-bottom: 0.5rem;
-      color: #34495e;
-    }
-    p {
-      margin: 0.5rem 0;
-    }
-    a {
-      color: #3498db;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .contact-info {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-bottom: 1.5rem;
-    }
-    .contact-info p {
-      margin: 0.3rem 0;
-    }
-    .section {
-      margin-bottom: 1.5rem;
-    }
-    .section ul {
-      padding-left: 20px;
-    }
-    .section ul li {
-      margin-bottom: 0.5rem;
-    }
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .skills span {
-      background-color: #ecf0f1;
-      padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 0.9rem;
-    }
-    .key-achievements ul, .technical-projects ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-    .key-achievements li, .technical-projects li {
-      margin-bottom: 0.5rem;
-    }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-      h2 {
-        font-size: 1.5rem;
-      }
-      h3 {
-        font-size: 1.2rem;
-      }
-      .contact-info {
-        flex-direction: column;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dinesh Kumar Seru - Payments Test Architect | TOSCA Automation Engineer">
+    <title>Dinesh Kumar Seru - Professional Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Make sure body takes up full height */
+            overflow-y: scroll; /* Allow vertical scroll for the whole page */
+        }
+        header {
+            background-color: #34495e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            background-color: #2c3e50;
+            padding: 10px;
+            justify-content: center;
+            border-bottom: 2px solid #3498db;
+        }
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+        }
+        .tab-content {
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            max-height: 70vh; /* Limit height */
+            overflow-y: auto; /* Allow vertical scrolling if content overflows */
+        }
+        .tab-content h2 {
+            color: #34495e;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .skills-list li, .awards-list li, .project-list li {
+            list-style-type: square;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Dinesh Kumar Seru</h1>
-      <p>TOSCA Automation Engineer | Payments Test Architect</p>
-      <div class="contact-info">
-        <p><a href="https://www.linkedin.com/in/dinesh-kumar-seru-20884416" target="_blank">LinkedIn: linkedin.com/in/dinesh-kumar-seru-20884416</a></p>
-        <p>E-mail: <a href="mailto:dineshkseru@gmail.com">dineshkseru@gmail.com</a></p>
-        <p>Mobile: +1 813-575-0245</p>
-      </div>
-    </header>
 
-    <section class="section">
-      <h2>Professional Summary</h2>
-      <p>A highly skilled software testing professional with over 17 years of experience in end-to-end software testing and test design. Extensive expertise in the waterfall model, Agile, and Scrum methodologies across various industries, including core banking, payments ISO20022 migration for SWIFT, The Clearing House "CHIPS" and Fedwire, and deposits. Hands-on experience with tools like TOSCA, Jira, HP ALM, and AS/400. Adept at collaborating with cross-functional and geographically dispersed teams. Strong business domain knowledge in core banking and financial services with exposure to global clients like HSBC, GE Money, and Lloyds. Driven to contribute to organizational growth while continually enhancing technical knowledge.</p>
-    </section>
+<header>
+    <h1>Dinesh Kumar Seru</h1>
+    <p>Payments Test Architect | TOSCA Automation Engineer</p>
+    <p><strong>Email:</strong> <a href="mailto:dineshkseru@gmail.com">dineshkseru@gmail.com</a><strong> Mobile:</strong> +1 813 546 7940 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dinesh-kumar-seru-20884416">linkedin.com/in/dinesh-kumar-seru-20884416</a></p>
+</header>
+<nav>
+    <a href="javascript:void(0)" onclick="showTab('summary')">Summary</a>
+    <a href="javascript:void(0)" onclick="showTab('skills')">Skills</a>
+    <a href="javascript:void(0)" onclick="showTab('education')">Education</a>
+    <a href="javascript:void(0)" onclick="showTab('certifications')">Certifications</a>
+    <a href="javascript:void(0)" onclick="showTab('projects')">Projects</a>
+    <a href="javascript:void(0)" onclick="showTab('contact')">Contact</a>
+</nav>
 
-    <section class="section">
-      <h2>Core Competencies & Technical Skills</h2>
-      <div class="skills">
-        <span>Test Automation: TOSCA, Selenium, Python</span>
-        <span>Testing Types: API, E2E, Regression, SIT, UAT</span>
-        <span>Tools: Jira, HP ALM, Postman, Jenkins, Tableau</span>
-        <span>Programming: Python, SQL, Mainframes, AS/400</span>
-        <span>Methodologies: Agile (Scrum), Waterfall, CICD, DevOps</span>
-        <span>Domains:ISO 20022 Payments,Core Banking,Retail Banking</span>
-        <span>Data Visualization: Tableau, Data Studio, Power BI</span>
-      </div>
-    </section>
+<div id="summary" class="tab-content">
+    <h2>Professional Summary</h2>
+    <p>A highly collaborative and independent Software Testing Professional with over 17 years of experience in end-to-end (E2E) software testing and design, specializing in Core Banking, Deposits, and the Payments Industry. As a Test Architect, I bring expertise in ISO 20022 payments messaging standards and a proven track record in designing and executing testing strategies for global payment systems like SWIFT, CHIPS, and Fedwire. I have extensive experience in managing dependencies and delivering high-quality results in complex, multi-geography environments.</p>
+</div>
 
-    <section class="section">
-      <h2>Professional Experience</h2>
-      <h3>HSBC Technology and Services., Buffalo NY</h3>
-      <p><strong>Senior Test Lead | April 2022 – Present</strong></p>
-      <ul>
-        <li>Leading the UAT/Business testing efforts for ISO20022 migration for SWIFT, CHIPS, Fedwire along with automation using TOSCA.</li>
-        <li>Integrated Jenkins for DevOps and CI/CD pipelines with TOSCA, enhancing test execution efficiency.</li>
-        <li>Managed end-to-end testing lifecycle using Jira for user stories, defect tracking, and traceability.</li>
-      </ul>
+<div id="skills" class="tab-content hidden">
+    <h2>Technical Exposure and Domain Knowledge</h2>
+    <ul class="skills-list">
+        <li>ISO 20022 Messaging (MT, MX)</li>
+        <li>Payments Tools: Finastra Global PAYplus</li>
+        <li>Sanctions AML Tools: Fircosoft</li>
+        <li>Automation Tools: TOSCA</li>
+        <li>API Testing: Postman, Insomnia</li>
+        <li>CI/CD Pipeline: Jenkins integration</li>
+        <li>Data Visualization: Looker Studio, Tableau, Power BI</li>
+        <li>Security Testing: IAM and User Entitlements</li>
+        <li>Mainframe Testing: TSO/ISPF</li>
+        <li>Agile Methodology: Scrum Master experience</li>
+    </ul>
+</div>
 
-      <h3>HSBC Software Development India Pvt. Ltd., Hyderabad IN</h3>
-      <p><strong>Senior Consultant Specialist | October 2009 – March 2022</strong></p>
-      <ul>
-        <li>Spearheaded testing for core banking applications and worked extensively with the payments domain.</li>
-        <li>Implemented and managed TOSCA test automation frameworks for core banking projects, including “Greenfield” and “US Facility Misalignment.”</li>
-        <li>Led large teams in automation and manual testing for high-impact projects, ensuring smooth execution of global migrations and product launches.</li>
-      </ul>
+<div id="education" class="tab-content hidden">
+    <h2>Education</h2>
+    <p><strong>Masters in Data Science and Engineering</strong>, BITS Pilani, Hyderabad – 2022</p>
+    <p><strong>Bachelor's in Electronics and Communication Engineering</strong>, JNTU, Hyderabad – 2006</p>
+</div>
 
-      <h3>Expleo, Chennai IN</h3>
-      <p><strong>Software Engineer | January 2007 – October 2009</strong></p>
-      <ul>
-        <li>Contributed to software testing for major banking clients, including First Data and Lloyds Banking Group, focusing on end-to-end scenarios and functional testing.</li>
-        <li>Vision Plus and AS/400 for cards profolio and QC for test management and quality control.</li>
-      </ul>
-    </section>
+<div id="certifications" class="tab-content hidden">
+    <h2>Certifications & Awards</h2>
+    <ul class="awards-list">
+        <li>Received “Circle of Excellence” award for managing flagship project in HSBC Core banking</li>
+        <li>Received “Technologist of the Quarter” award at HSBC Core banking department</li>
+        <li>Received “All Star” award at HSBC Technology for Greenfield Project</li>
+        <li>Oracle Autonomous Database Cloud 2019 Certified Specialist – Issued May 2020</li>
+        <li>Tricentis TOSCA RPA Specialist – Issued April 2020</li>
+        <li>Tricentis TOSCA Query Language – Issued April 2020</li>
+        <li>Tricentis TOSCA Test Design Specialist Level 2 - Issued July 2019</li>
+        <li>Tricentis TOSCA Test Design Specialist Level 1 - Issued July 2019</li>
+        <li>Tricentis TOSCA Automation Specialist API - Issued June 2019</li>
+        <li>Tricentis TOSCA Automation Specialist level 2 - Issued May 2019</li>
+        <li>Tricentis TOSCA Automation Specialist level 1 - Issued May 2019</li>
+        <li>ISTQB Foundation Level Certification – Issued August 2008</li>
+    </ul>
+</div>
 
-    <section class="section">
-      <h2>Education</h2>
-      <p><strong>Masters in Data Science and Engineering</strong> | BITS Pilani</p>
-      <p><strong>Bachelors in Electronics and Communication Engineering</strong> | JNTU</p>
-    </section>
+<div id="projects" class="tab-content hidden">
+    <h2>Project Experience</h2>
+    <ul class="project-list">
+        <li><strong>ISO Programme</strong> - HSBC Bank North America | Period: July’22 to Present | Role: Payments Test Architect</li>
+        <li><strong>LEAP</strong> - HSBC Bank North America | Period: Dec’21 to May’22 | Role: Senior Automation Test Engineer, Test Lead</li>
+        <li><strong>Morel</strong> - HSBC Bank North America | Period: Mar’21 to Nov’21 | Role: Test Manager</li>
+        <li><strong>US Facility Misalignment</strong> - HSBC Bank North America | Period: Dec’19 to Feb’21 | Role: Test Manager</li>
+        <li><strong>Greenfield</strong> - HSBC Bank North America | Period: Sep’13 to Dec’19 | Role: Consultant Specialist, Team Lead</li>
+        <li><strong>One HSBC Cards</strong> - HSBC Bank North America | Period: Nov’09 to Aug’13 | Role: Consultant Specialist, Team Lead</li>
+        <li><strong>Expelo</strong> GE Money, LLyods Banking | Period: Jan’07 to Oct’09 | Role: Consultant Specialist, Team Lead</li>
+    </ul>
+</div>
 
-    <section class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Circle of Excellence Award – HSBC, Jan 2022</li>
-        <li>Oracle Autonomous Database Cloud Certified Specialist, May 2020</li>
-        <li>Tricentis TOSCA Automation Specialist (Level 1 & 2), April 2020</li>
-        <li>Tricentis Test Design Specialist Level 1 & 2, July 2019</li>
-        <li>Tricentis Automation Specialist API, June 2019</li>
-		<li>Google Cloud Platform Big Data and Machine Learning Fundamentals, Coursera, October 2019</li>
-		<li>ISTQB Foundation Level Certification, August 2008</li>
-      </ul>
-    </section>
+<div id="contact" class="tab-content hidden">
+    <h2>Contact Information</h2>
+    <p><strong>Email:</strong> <a href="mailto:dineshkseru@gmail.com">dineshkseru@gmail.com</a></p>
+    <p><strong>Mobile:</strong> +1 813 546 7940</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dinesh-kumar-seru-20884416">linkedin.com/in/dinesh-kumar-seru-20884416</a></p>
+    <p><strong>Website:</strong> <a href="https://serudinesh.github.io/Dinesh.html">https://serudinesh.github.io/Dinesh.html</a></p>
+</div>
 
-    <section class="section key-achievements">
-      <h2>Key Achievements & Contributions</h2>
-      <ul>
-        <li>Automation Leadership: Directed TOSCA test automation for HSBC’s Core Banking projects, improving test efficiency by 40%.</li>
-        <li>CI/CD Integration: Successfully integrated Jenkins with TOSCA for the first-ever CI/CD implementation in HSBC Core Banking.</li>
-        <li>Training & Mentorship: Trained over 30 team members in automation tools and testing processes, promoting skill development and knowledge transfer.</li>
-        <li>Project Management: Managed cross-functional teams, ensuring the timely delivery of multiple projects and maintaining quality standards.</li>
-        <li>Stakeholder Collaboration: Actively participated in business analysis, GAP analysis, and mapping business requirements to technical solutions.</li>
-      </ul>
-    </section>
+<footer>
+    <p>&copy; 2025 Dinesh Kumar Seru | All Rights Reserved</p>
+</footer>
 
-    <section class="section technical-projects">
-      <h2>Technical Projects</h2>
-      <ul>
-        <li><strong>ISO20022 Migration:</strong> Lead business testing and automation efforts using TOSCA and integrated Jenkins for CI/CD pipelines.</li>
-        <li><strong>LEAP (HSBC North America):</strong> Automated customer onboarding processes, leveraging TOSCA for API and end-to-end payment flow testing.</li>
-        <li><strong>Morel (HSBC North America):</strong> Led the testing for data migration during a divestiture program, using TOSCA for regression and validation.</li>
-        <li><strong>Greenfield (HSBC North America):</strong> Coordinated testing efforts for core banking systems replacement, using TOSCA for automation and defect management.</li>
-		<li><strong>One HSBC Cards (HSBC North America):</strong> Coordinated testing efforts for cards migration based out of vision Plus.</li>
-      </ul>
-    </section>
-  </div>
+<script>
+    function showTab(tabId) {
+        const tabs = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => tab.classList.add('hidden'));
+
+        const selectedTab = document.getElementById(tabId);
+        selectedTab.classList.remove('hidden');
+    }
+
+    showTab('summary');
+</script>
+
 </body>
 </html>
