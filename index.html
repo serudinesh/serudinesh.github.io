@@ -119,8 +119,96 @@
                 max-height: 50vh;
             }
         }
+		/* Chat Widget */
+#chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#chat-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    height: 420px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#chat-header {
+    background: #4a4d4f;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.chat-user {
+    text-align: right;
+    margin: 8px 0;
+    color: #3498db;
+}
+
+.chat-bot {
+    text-align: left;
+    margin: 8px 0;
+    color: #2c3e50;
+}
+
+#chat-input-container {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+#chat-send {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+}
     </style>
 </head>
+	<!-- Chat Button -->
+<button id="chat-toggle">💬</button>
+
+<!-- Chat Window -->
+<div id="chat-container">
+    <div id="chat-header">Ask Me Anything</div>
+    <div id="chat-messages"></div>
+    <div id="chat-input-container">
+        <input type="text" id="chat-input" placeholder="Type a message..." />
+        <button id="chat-send">Send</button>
+    </div>
+</div>
+
 <body>
 
 <header>
@@ -227,6 +315,68 @@
 
     showTab('summary');
 </script>
+	<script>
+const webhookUrl = "https://dineshseru.app.n8n.cloud/webhook/95aa970a-2a25-4567-8e6f-9f2883dbf321/chat";
+
+const chatToggle = document.getElementById("chat-toggle");
+const chatContainer = document.getElementById("chat-container");
+const chatMessages = document.getElementById("chat-messages");
+const chatInput = document.getElementById("chat-input");
+const chatSend = document.getElementById("chat-send");
+
+chatToggle.onclick = () => {
+    chatContainer.style.display =
+        chatContainer.style.display === "flex" ? "none" : "flex";
+    chatContainer.style.display = "flex";
+};
+
+chatSend.onclick = sendMessage;
+chatInput.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") sendMessage();
+});
+
+async function sendMessage() {
+    const message = chatInput.value.trim();
+    if (!message) return;
+
+    appendMessage("You: " + message, "chat-user");
+    chatInput.value = "";
+
+    appendMessage("Typing...", "chat-bot");
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    try {
+        const response = await fetch(webhookUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ message: message })
+        });
+
+        const data = await response.json();
+
+        // Remove typing indicator
+        chatMessages.lastChild.remove();
+
+        appendMessage("Bot: " + (data.reply || data.output || JSON.stringify(data)), "chat-bot");
+    } catch (error) {
+        chatMessages.lastChild.remove();
+        appendMessage("Error connecting to server.", "chat-bot");
+    }
+
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function appendMessage(text, className) {
+    const div = document.createElement("div");
+    div.className = className;
+    div.innerText = text;
+    chatMessages.appendChild(div);
+}
+</script>
+
 
 </body>
 </html>
+
